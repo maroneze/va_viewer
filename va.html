@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script src="jquery-1.9.0.min.js"></script>
+		<script src="va.js"></script>
+		<link rel="stylesheet" href="va.css" type="text/css">
+		<title>VA viewer</title>
+	</head>
+	<body>
+		<div>
+			<div class="inputDiv"> 
+				Insert RTL program here and click <input type="button" id="sendRtl" value="Update RTL Program" onclick="inputRtl()"/><br>
+				<textarea id="rtlSource" rows="15" cols="60"></textarea><br>
+			</div> 
+			<div class="inputDiv"> 
+				Insert Value Analysis trace here and click <input type="button" id="sendVa" value="Update VA Trace" onclick="inputVa()"/> <br>
+				<textarea id="vaSource" rows="15" cols="60"></textarea><br>
+			</div> 
+		</div>
+		<div class="outputDiv">
+			Result: MaxTime: <span id="spanMaxTime">0</span> Current time: <input type="button" id="timeDec" value="<" onclick="decTime()"/> <textarea id="curTime" rows="1" cols="3">0</textarea> <input type="button" id="timeInc" value=">" onclick="incTime()"/> <input type="button" id="refresh" value="Refresh" onclick="displayCurTime()"/>
+			<div id="result"> </div>
+			Action: <textarea id="curAction" rows="1" cols="100"></textarea> 
+		</div>
+	</body>
+</html>

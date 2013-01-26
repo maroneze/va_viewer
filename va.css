@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* CSS Document */
+
+.highlight {
+	background-color: yellow;
+}
+
+td {
+	background-color: inherit;
+}
+
+#spanMaxTime {
+	border:solid 1px;
+	margin:5px;
+	padding: 0 5px;
+}
+
+#result {
+	border:solid 1px;
+}
+
+.inputDiv {
+	float:left;	
+}
+
+.outputDiv {
+	clear:left;
+}
